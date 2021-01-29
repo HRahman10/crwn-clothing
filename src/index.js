@@ -13,14 +13,14 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-const userReducer = (currentState, action) => {
-  switch (action.type){
-    case 'SET_CURRENT_USER':
-      return{ // NOTE WE ARE RETURNING A NEW OBJECT TO TRIGGER AN UPDATE THE COMPONENT
-        ...currentState,
-        currentUser: action.payload
-      };
-      default:
-        return currentState
-  }
-}
+// const userReducer = (currentState, action) => {
+//   switch (action.type){
+//     case 'SET_CURRENT_USER':
+//       return{ // NOTE WE ARE RETURNING A NEW OBJECT TO TRIGGER AN UPDATE THE COMPONENT
+//         ...currentState,
+//         currentUser: action.payload
+//       };
+//       default:
+//         return currentState
+//   }
+// }
